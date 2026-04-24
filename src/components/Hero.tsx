@@ -28,19 +28,11 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none z-10 opacity-30 mix-blend-screen bg-[url('https://images.unsplash.com/photo-1444465693019-aa0b63924f0c?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center" />
       <div className="wood-grain z-20" />
 
-      {/* Split Screen Background */}
-      <div className="absolute inset-0 flex">
-        {/* Left: Grand Wooden Door */}
-        <div
-          className="w-1/2 h-full bg-cover bg-center brightness-[0.6] grayscale-[0.2]"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1510001099195-2cc6770fa324?q=80&w=1080&auto=format&fit=crop)' }}
-        />
-        {/* Right: Floor to ceiling window */}
-        <div
-          className="w-1/2 h-full bg-cover bg-center brightness-[0.6] grayscale-[0.2]"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1506377711776-db12c1fa0b54?q=80&w=1080&auto=format&fit=crop)' }}
-        />
-      </div>
+      {/* Full Screen Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center brightness-[0.4] grayscale-[0.1]"
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2048&auto=format&fit=crop)' }}
+      />
 
       {/* Overlay gradient for readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-walnut via-walnut/40 to-transparent z-10" />
